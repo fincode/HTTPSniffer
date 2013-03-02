@@ -1,0 +1,100 @@
+﻿Build started 24.07.2012 10:56:55.
+     1>Project "C:\Users\oscherbatyh\documents\visual studio 2010\Projects\works\httpSniffer\httpSniffer.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\httpSniffer.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\boost_1_50_0 /I"C:\Users\oscherbatyh\Documents\Visual Studio 2010\Projects\works\httpSniffer\Include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\httpSniffer.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\boost_1_50_0 /I"C:\Users\oscherbatyh\Documents\Visual Studio 2010\Projects\works\httpSniffer\Include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\httpSniffer.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt HSLinkedList.cpp HSLinkedListCont.cpp HSStrList.cpp HSTcpPacket.cpp HSWebTool.cpp httpSniffer.cpp
+         HSLinkedList.cpp
+         HSLinkedListCont.cpp
+         HSStrList.cpp
+     1>C:\boost_1_50_0\boost/algorithm/string/detail/finder.hpp(583): warning C4244: 'argument' : conversion from 'wchar_t' to 'char', possible loss of data
+                 C:\boost_1_50_0\boost/algorithm/string/concept.hpp(43) : see reference to function template instantiation 'boost::iterator_range<IteratorT> boost::algorithm::detail::token_finderF<PredicateT>::operator ()<IteratorT>(ForwardIteratorT,ForwardIteratorT) const' being compiled
+                 with
+                 [
+                     IteratorT=std::_String_iterator<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>,
+                     PredicateT=bool (__cdecl *)(char),
+                     ForwardIteratorT=std::_String_iterator<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>
+                 ]
+                 C:\boost_1_50_0\boost/algorithm/string/concept.hpp(41) : while compiling class template member function 'void boost::algorithm::FinderConcept<FinderT,IteratorT>::constraints(void)'
+                 with
+                 [
+                     FinderT=boost::algorithm::detail::token_finderF<bool (__cdecl *)(char)>,
+                     IteratorT=std::_String_iterator<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>
+                 ]
+                 C:\boost_1_50_0\boost/concept/detail/has_constraints.hpp(42) : see reference to class template instantiation 'boost::algorithm::FinderConcept<FinderT,IteratorT>' being compiled
+                 with
+                 [
+                     FinderT=boost::algorithm::detail::token_finderF<bool (__cdecl *)(char)>,
+                     IteratorT=std::_String_iterator<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>
+                 ]
+                 C:\boost_1_50_0\boost/concept/detail/msvc.hpp(53) : see reference to class template instantiation 'boost::concepts::not_satisfied<Model>' being compiled
+                 with
+                 [
+                     Model=boost::algorithm::FinderConcept<boost::algorithm::detail::token_finderF<bool (__cdecl *)(char)>,std::_String_iterator<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>
+                 ]
+                 C:\boost_1_50_0\boost/algorithm/string/iter_find.hpp(148) : see reference to class template instantiation 'boost::concepts::require<Model>' being compiled
+                 with
+                 [
+                     Model=boost::algorithm::FinderConcept<boost::algorithm::detail::token_finderF<bool (__cdecl *)(char)>,std::_String_iterator<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>>
+                 ]
+                 C:\boost_1_50_0\boost/algorithm/string/split.hpp(149) : see reference to function template instantiation 'SequenceSequenceT &boost::algorithm::iter_split<SequenceSequenceT,RangeT,boost::algorithm::detail::token_finderF<PredicateT>>(SequenceSequenceT &,RangeT &,FinderT)' being compiled
+                 with
+                 [
+                     SequenceSequenceT=std::list<std::wstring>,
+                     RangeT=std::wstring,
+                     PredicateT=bool (__cdecl *)(char),
+                     FinderT=boost::algorithm::detail::token_finderF<bool (__cdecl *)(char)>
+                 ]
+                 HSStrList.cpp(30) : see reference to function template instantiation 'SequenceSequenceT &boost::algorithm::split<std::list<_Ty>,std::wstring,bool(__cdecl *)(char)>(SequenceSequenceT &,RangeT &,PredicateT,boost::algorithm::token_compress_mode_type)' being compiled
+                 with
+                 [
+                     SequenceSequenceT=std::list<std::wstring>,
+                     _Ty=std::wstring,
+                     RangeT=std::wstring,
+                     PredicateT=bool (__cdecl *)(char)
+                 ]
+         HSTcpPacket.cpp
+         HSWebTool.cpp
+     1>HSWebTool.cpp(125): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(253) : see declaration of 'fscanf'
+     1>HSWebTool.cpp(176): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>HSWebTool.cpp(240): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>HSWebTool.cpp(267): warning C4996: 'swprintf': swprintf has been changed to conform with the ISO C standard, adding an extra character count parameter. To use traditional Microsoft swprintf, set _CRT_NON_CONFORMING_SWPRINTFS.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\swprintf.inl(85) : see declaration of 'swprintf'
+     1>HSWebTool.cpp(305): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\sys\timeb.h(124) : see declaration of '_ftime64'
+     1>HSWebTool.cpp(306): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
+     1>HSWebTool.cpp(312): warning C4996: '_itoa': This function or variable may be unsafe. Consider using _itoa_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdlib.h(451) : see declaration of '_itoa'
+     1>HSWebTool.cpp(330): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>HSWebTool.cpp(338): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+         httpSniffer.cpp
+     1>httpSniffer.cpp(241): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>httpSniffer.cpp(235): warning C4101: 'res' : unreferenced local variable
+       ResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\httpSniffer.res" httpSniffer.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\oscherbatyh\documents\visual studio 2010\Projects\works\Release\httpSniffer.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\oscherbatyh\Documents\Visual Studio 2010\Projects\works\httpSniffer\Lib" /LIBPATH:C:\boost_1_50_0\bin.v2\libs\regex /LIBPATH:C:\boost_1_50_0 /LIBPATH:"C:\Users\oscherbatyh\Documents\Visual Studio 2010\Projects\works\Release\link-static" /LIBPATH:"C:\Users\oscherbatyh\Documents\Visual Studio 2010\Projects\works\Debug\link-static\threading-multi" wpcap.lib wsock32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\httpSniffer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\oscherbatyh\documents\visual studio 2010\Projects\works\Release\httpSniffer.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\oscherbatyh\documents\visual studio 2010\Projects\works\Release\httpSniffer.lib" /MACHINE:X86 Release\httpSniffer.res
+         Release\httpSniffer.obj
+         Release\HSLinkedList.obj
+         Release\HSLinkedListCont.obj
+         Release\stdafx.obj
+         Release\HSStrList.obj
+         Release\HSTcpPacket.obj
+         Release\HSWebTool.obj
+         Lib\Packet.lib
+         Lib\wpcap.lib
+     1>LINK : fatal error LNK1104: cannot open file 'libboost_regex-vc100-mt-1_50.lib'
+     1>Done Building Project "C:\Users\oscherbatyh\documents\visual studio 2010\Projects\works\httpSniffer\httpSniffer.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:19.28

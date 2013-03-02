@@ -1,0 +1,114 @@
+##### TCP _packet #####
+
+Ethernet Header
+ |-Destination Address : 00-15-17-D1-02-79 
+ |-Source Address      : 00-26-2D-6D-C3-66 
+ |-Protocol            : 0x0800 
+
+IP Header
+ |-IP Version : 4
+ |-IP Header Length : 5 DWORDS or 20 Bytes
+ |-Type Of Service : 0
+ |-IP Total Length : 602 Bytes(Size of _packet)
+ |-Identification : 6811
+ |-Reserved ZERO Field : 0
+ |-Dont Fragment Field : 1
+ |-More Fragment Field : 0
+ |-TTL : 128
+ |-Protocol : 6
+ |-Checksum : 0
+ |-Source IP : 10.2.36.24
+ |-Destination IP : 85.142.134.170
+
+TCP Header
+ |-Source Port : 56108
+ |-Destination Port : 80
+ |-Sequence Number : 3499028434
+ |-Acknowledge Number : 1181305878
+ |-Header Length : 5 DWORDS or 20 BYTES
+ |-CWR Flag : 0
+ |-ECN Flag : 0
+ |-Urgent Flag : 0
+ |-Acknowledgement Flag : 1
+ |-Push Flag : 1
+ |-Reset Flag : 0
+ |-Synchronise Flag : 0
+ |-Finish Flag : 0
+ |-Window : 16425
+ |-Checksum : 3231
+ |-Urgent Pointer : 0
+
+_data Payload
+POST /driver/load.php HTTP/1.1
+User-Agent: Opera/9.80 (Windows NT 6.1; WOW64) Presto/2.12.388 Version/12.11
+Host: ocnit.tula.ru
+Accept: text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1
+Accept-Language: ru-RU,ru;q=0.9,en;q=0.8
+Accept-Encoding: gzip, deflate
+Referer: http://ocnit.tula.ru/
+Cookie: PHPSESSID=t8q0r4bbv4hph983vluae995q6
+Connection: Keep-Alive
+Content-Length: 45
+Content-Type: application/x-www-form-urlencoded
+
+id=64&search=fuck&random=0.003945158699842466­)
+###########################################################
+
+
+##### TCP _packet #####
+
+Ethernet Header
+ |-Destination Address : 00-15-17-D1-02-79 
+ |-Source Address      : 00-26-2D-6D-C3-66 
+ |-Protocol            : 0x0800 
+
+IP Header
+ |-IP Version : 4
+ |-IP Header Length : 5 DWORDS or 20 Bytes
+ |-Type Of Service : 0
+ |-IP Total Length : 601 Bytes(Size of _packet)
+ |-Identification : 7069
+ |-Reserved ZERO Field : 0
+ |-Dont Fragment Field : 1
+ |-More Fragment Field : 0
+ |-TTL : 128
+ |-Protocol : 6
+ |-Checksum : 0
+ |-Source IP : 10.2.36.24
+ |-Destination IP : 85.142.134.170
+
+TCP Header
+ |-Source Port : 56181
+ |-Destination Port : 80
+ |-Sequence Number : 1084673480
+ |-Acknowledge Number : 2404119947
+ |-Header Length : 5 DWORDS or 20 BYTES
+ |-CWR Flag : 0
+ |-ECN Flag : 0
+ |-Urgent Flag : 0
+ |-Acknowledgement Flag : 1
+ |-Push Flag : 1
+ |-Reset Flag : 0
+ |-Synchronise Flag : 0
+ |-Finish Flag : 0
+ |-Window : 16425
+ |-Checksum : 3230
+ |-Urgent Pointer : 0
+
+_data Payload
+POST /driver/load.php HTTP/1.1
+User-Agent: Opera/9.80 (Windows NT 6.1; WOW64) Presto/2.12.388 Version/12.11
+Host: ocnit.tula.ru
+Accept: text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1
+Accept-Language: ru-RU,ru;q=0.9,en;q=0.8
+Accept-Encoding: gzip, deflate
+Referer: http://ocnit.tula.ru/
+Cookie: PHPSESSID=t8q0r4bbv4hph983vluae995q6
+Connection: Keep-Alive
+Content-Length: 44
+Content-Type: application/x-www-form-urlencoded
+
+id=64&search=fuck&random=0.27941873860514166
+###########################################################
+
+
