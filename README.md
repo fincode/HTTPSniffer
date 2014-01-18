@@ -1,5 +1,5 @@
-# CONSOLE C++ APPLICATION : HttpSniffer 
-# Project Overview
+# CONSOLE C++ APPLICATION : HttpSniffer.  Project Overview
+
 
 ## HTTPSniffer v1.0
 
